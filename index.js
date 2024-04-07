@@ -1,7 +1,7 @@
-const app = require("./app");
+const app = require("./src/app");
 const dotENV = require("dotenv");
 dotENV.config();
-require("../dbConnect");
+require("./dbConnect");
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
